@@ -38,6 +38,6 @@ public class ServerAction implements Action {
         out.writeUTF("ConnectOther");
         out.writeUTF(player.getName());
         out.writeUTF(data);
-        player.sendPluginMessage(plugin, "BungeeCord", out.toByteArray());
+        player.sendPluginMessage(plugin, "BungeeCord:main", out.toByteArray());
     }
 }
